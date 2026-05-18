@@ -1,0 +1,61 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "demovuln"
+version = "0.1.0"
+description = "Demographic vulnerability metrics for matrix population models under temporally structured perturbations."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [
+  { name = "Alex Giménez-Romero", email = "alex.gimenez@csic.es" }
+]
+keywords = [
+  "matrix population models",
+  "demography",
+  "life history",
+  "population ecology",
+  "perturbations",
+  "vulnerability"
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Scientific/Engineering",
+]
+dependencies = [
+  "numpy>=1.23",
+  "pandas>=1.5"
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=7",
+  "build",
+  "twine",
+  "ruff",
+]
+docs = [
+  "sphinx",
+  "sphinx-rtd-theme",
+  "numpydoc",
+  "myst-parser",
+]
+
+[project.urls]
+Homepage = "https://github.com/agimenezromero/demovuln"
+Repository = "https://github.com/agimenezromero/demovuln"
+Documentation = "https://demovuln.readthedocs.io"
+Issues = "https://github.com/agimenezromero/demovuln/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["demovuln*"]

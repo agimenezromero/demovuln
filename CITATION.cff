@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use demovuln, please cite it as below."
+title: "demovuln: Demographic vulnerability metrics for matrix population models"
+authors:
+  - family-names: "Giménez-Romero"
+    given-names: "Alex"
+version: "0.1.0"
+date-released: "2026-05-18"
+repository-code: "https://github.com/agimenezromero/demovuln"
+license: "MIT"
+keywords:
+  - matrix population models
+  - demography
+  - life history
+  - population ecology
+  - perturbations
+  - vulnerability

@@ -1,0 +1,27 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+build/
+dist/
+*.egg-info/
+
+.venv/
+venv/
+.env
+
+.DS_Store
+
+# Sphinx documentation build
+docs/_build/
+
+# Sphinx documentation build
+docs/_build/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
