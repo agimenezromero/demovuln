@@ -1,25 +1,27 @@
 API reference
 =============
 
-Core API
---------
+Core objects
+------------
 
-.. autosummary::
-   :toctree: generated
+The main public objects are imported from the top-level package:
 
-   demovuln.MatrixPopulationModel
-   demovuln.PerturbationGrid
-   demovuln.simulate_dynamics
-   demovuln.run_grid
-   demovuln.population_reduction
-   demovuln.compute_vulnerability
+.. code-block:: python
+
+   from demovuln import (
+       MatrixPopulationModel,
+       PerturbationGrid,
+       simulate_dynamics,
+       run_grid,
+       population_reduction,
+       compute_vulnerability,
+   )
 
 Models
 ------
 
 .. automodule:: demovuln.models
    :members:
-   :undoc-members:
    :show-inheritance:
 
 Perturbations
@@ -27,7 +29,6 @@ Perturbations
 
 .. automodule:: demovuln.perturbations
    :members:
-   :undoc-members:
    :show-inheritance:
 
 Simulation
@@ -35,7 +36,6 @@ Simulation
 
 .. automodule:: demovuln.simulation
    :members:
-   :undoc-members:
    :show-inheritance:
 
 Vulnerability
@@ -43,5 +43,4 @@ Vulnerability
 
 .. automodule:: demovuln.vulnerability
    :members:
-   :undoc-members:
    :show-inheritance:

@@ -9,14 +9,13 @@ release = "0.1.0"
 
 extensions = [
     "sphinx.ext.autodoc",
-    "sphinx.ext.autosummary",
     "sphinx.ext.napoleon",
     "sphinx.ext.viewcode",
     "sphinx.ext.intersphinx",
     "myst_parser",
 ]
 
-autosummary_generate = True
+# autosummary_generate = True
 
 html_theme = "sphinx_rtd_theme"
 

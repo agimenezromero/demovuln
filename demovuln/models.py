@@ -120,29 +120,15 @@ class MatrixPopulationModel:
         not classified as adult.
     name : str, optional
         Optional label for the model, population or species.
-
-    Attributes
-    ----------
-    matrix : numpy.ndarray
-        Copy of the projection matrix.
-    n_stages : int
-        Number of stages or classes in the projection matrix.
-    fecundity_element_mask : numpy.ndarray
-        Boolean matrix selecting entries classified as fecundity.
-    adult_stage_mask : numpy.ndarray
-        Boolean vector selecting adult or reproductive source stages.
-    juvenile_stage_mask : numpy.ndarray
-        Boolean vector selecting juvenile or pre-reproductive source stages.
-    lambda_ : float
-        Dominant eigenvalue of the projection matrix.
-
+        
     Notes
     -----
-    Stage indices follow standard Python zero-based indexing. Automatic target
-    classification is provided for common stage-structured matrices, but users
-    should explicitly pass ``fecundity_mask``, ``adult_stages`` or
-    ``juvenile_stages`` when the biological interpretation of matrix entries
-    cannot be inferred unambiguously from matrix position alone.
+    The projection matrix is stored internally as a NumPy array. The model also
+    stores inferred or user-defined demographic masks identifying fecundity entries,
+    adult source stages, juvenile source stages, and the dominant eigenvalue of the
+    unperturbed projection matrix.
+
+    Stage indices are zero-based, following Python indexing.
     """
 
     A: np.ndarray
