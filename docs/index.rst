@@ -17,4 +17,5 @@ The package supports two complementary levels of analysis:
    installation
    usage
    theory
+   notebooks
    api
