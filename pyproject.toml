@@ -47,7 +47,7 @@ docs = [
   "sphinx",
   "sphinx-rtd-theme",
   "numpydoc",
-  "myst-parser",
+  "myst-nb",
 ]
 examples = [
   "jupyterlab",
