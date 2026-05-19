@@ -1,10 +1,26 @@
 # demovuln
 
+[![PyPI version](https://img.shields.io/pypi/v/demovuln.svg)](https://pypi.org/project/demovuln/)
+[![Documentation Status](https://readthedocs.org/projects/demovuln/badge/?version=latest)](https://demovuln.readthedocs.io/en/latest/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 `demovuln` is a Python package for simulating temporally structured demographic perturbations in matrix population models and estimating integrated population vulnerability.
 
 The package is designed for comparative demographic analyses in which perturbations differ in magnitude, duration, and recurrence. It provides tools to simulate individual perturbation trajectories, evaluate full perturbation grids, and compute an integrated vulnerability metric based on population reduction relative to an unperturbed baseline.
 
+## Documentation
+
+The full documentation, including API reference and example notebooks, is available at:
+
+https://demovuln.readthedocs.io/en/latest/
+
 ## Installation
+
+Install the latest released version from PyPI:
+
+```bash
+pip install demovuln
+```
 
 For local development:
 
@@ -12,12 +28,6 @@ For local development:
 git clone https://github.com/agimenezromero/demovuln.git
 cd demovuln
 python -m pip install -e ".[dev,docs]"
-```
-
-After publication on PyPI, the package will be installable with:
-
-```bash
-pip install demovuln
 ```
 
 ## Basic usage
@@ -133,6 +143,12 @@ Integrated vulnerability is the mean population reduction across the simulated p
 Phi = mean(rho)
 ```
 
+## Example notebooks
+
+Example notebooks are available in the `notebooks/` directory and in the online documentation:
+
+https://demovuln.readthedocs.io/en/latest/notebooks.html
+
 ## Development checks
 
 Run:
@@ -141,21 +157,7 @@ Run:
 pytest
 python examples/basic_usage.py
 ruff check demovuln tests examples
-sphinx-build -W -b html docs docs/_build/html
-```
-
-## Documentation
-
-Local documentation can be built with:
-
-```bash
-sphinx-build -b html docs docs/_build/html
-```
-
-Then open:
-
-```bash
-xdg-open docs/_build/html/index.html
+sphinx-build -W -E -b html docs docs/_build/html
 ```
 
 ## Citation
