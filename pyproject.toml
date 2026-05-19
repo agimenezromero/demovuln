@@ -49,6 +49,11 @@ docs = [
   "numpydoc",
   "myst-parser",
 ]
+examples = [
+  "jupyterlab",
+  "ipykernel",
+  "matplotlib",
+]
 
 [project.urls]
 Homepage = "https://github.com/agimenezromero/demovuln"

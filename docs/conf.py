@@ -12,7 +12,7 @@ extensions = [
     "sphinx.ext.napoleon",
     "sphinx.ext.viewcode",
     "sphinx.ext.intersphinx",
-    "myst_parser",
+    "myst_nb",
 ]
 
 # autosummary_generate = True
@@ -26,5 +26,7 @@ napoleon_google_docstring = False
 napoleon_numpy_docstring = True
 napoleon_use_param = True
 napoleon_use_rtype = True
+
+nb_execution_mode = "off"
 
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
