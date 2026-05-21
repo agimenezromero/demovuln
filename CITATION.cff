@@ -5,7 +5,7 @@ authors:
   - family-names: "Giménez-Romero"
     given-names: "Alex"
     orcid: "https://orcid.org/0000-0003-2796-6801"
-   - family-names: "Genovart"
+  - family-names: "Genovart"
     given-names: "Meritxell"
     orcid: "https://orcid.org/0000-0003-2919-1288"
 version: "0.1.0"
